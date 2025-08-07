@@ -7,7 +7,7 @@ const projects = [
     description: "A web app to help traveller to find best destinations",
     image: "/projects/project1.png",
     tags: ["HTML, CSS, JavaScript, Firebase"],
-    demoUrl: "",
+    demoUrl: "https://stately-sprinkles-ae8f52.netlify.app/",
     githubUrl: "https://github.com/rupayand97/Travel_Inspiration_Platform",
   },
   {
@@ -16,17 +16,17 @@ const projects = [
     description: "A web app to help students to build good resume",
     image: "/projects/project2.png",
     tags: ["HTML, CSS, React, Firebase"],
-    demoUrl: "",
+    demoUrl: "https://inspiring-crepe-7e5239.netlify.app/login",
     githubUrl: "https://github.com/rupayand97/Resume-builder-app",
   },
   {
     id: 3,
-    title: "Library Management System",
-    description: "An app to borrow and return books efficiently",
+    title: "Tic Tac Toe",
+    description: "A Simple interactive TicTac Toe game built for two player to play in the browser",
     image: "/projects/project3.png",
-    tags: ["HTML, Tailwind, React, MongoDB"],
-    demoUrl: "",
-    githubUrl: "https://github.com/rupayand97/library-management-system-app",
+    tags: ["HTML, CSS, JavaScript"],
+    demoUrl: "https://tic-tac-toe-woad-xi.vercel.app/",
+    githubUrl: "https://github.com/rupayand97/Tic-Tac-Toe",
   },
 ];
 
