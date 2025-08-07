@@ -145,7 +145,7 @@ const navItems = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
-  { name: "Resume", href: "pdf/resume.pdf" },
+  { name: "Resume", href: "pdf/Rupayan_Das_Resume.pdf" },
 ];
 
 export const Navbar = () => {
