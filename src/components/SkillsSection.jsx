@@ -1,22 +1,23 @@
 import { useState } from "react";
 import { cn } from "../lib/utils";
+import { Atom, BadgeCheck, Braces, Database, FileCode, GitBranch, Landmark, Monitor, Paintbrush, Server, Square } from "lucide-react";
 
 const skills = [
   //Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 85, category: "frontend" },
-  { name: "React", level: 80, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 80, category: "frontend" },
+  { name: "HTML/CSS", level: 95, category: "frontend", icon: Braces},
+  { name: "JavaScript", level: 85, category: "frontend", icon: FileCode},
+  { name: "React", level: 80, category: "frontend", icon: Atom},
+  { name: "TypeScript", level: 85, category: "frontend", icon: BadgeCheck},
+  { name: "Tailwind CSS", level: 80, category: "frontend", icon: Paintbrush},
 
   //Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 70, category: "backend" },
-  { name: "MongoDB", level: 75, category: "backend" },
+  { name: "Node.js", level: 80, category: "backend", icon: Server},
+  { name: "Express", level: 70, category: "backend", icon: Landmark},
+  { name: "MongoDB", level: 75, category: "backend", icon: Database},
 
   //Tools
-  { name: "Git/Github", level: 90, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Git/Github", level: 90, category: "tools", icon: GitBranch},
+  { name: "VS Code", level: 95, category: "tools", icon: Monitor},
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -58,12 +59,13 @@ export const SkillsSection = () => {
               key={key}
               className="bg-card p-6 rounded-lg shadow-xs card-hover"
             >
-              <div className="text-left mb-4">
+              <div className="text-left mb-4 flex items-center gap-2">
+                <skill.icon className="w-5 h-5 text-primary" />
                 <h3 className="font-semibold text-lg">{skill.name}</h3>
               </div>
               <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                 <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out"
+                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
                   style={{ width: skill.level + "%" }}
                 />
               </div>
